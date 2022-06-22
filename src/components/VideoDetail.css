@@ -1,0 +1,12 @@
+.videos-left-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.videos-left-column p {
+    max-width: 600px;
+}
+
+.videos-left-column h1{
+    max-width: 900px;
+}

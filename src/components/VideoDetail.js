@@ -1,4 +1,5 @@
 import React from 'react';
+import './VideoDetail.css';
 
 const VideoDetail = ({ video }) => {
 
@@ -9,12 +10,10 @@ const VideoDetail = ({ video }) => {
     const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
 
     return (
-        <div>
-            <div>
-                <iframe src={videoSrc} frameborder="0"></iframe>
-            </div>
-            {video.snippet.title}
-            {video.snippet.description}
+        <div className="videos-left-column">
+            <iframe width="900" height="600" src={videoSrc} frameBorder="0"></iframe>
+            <h1>{video.snippet.title}</h1>
+            <p>{video.snippet.description}</p>
         </div>
     );
 }
